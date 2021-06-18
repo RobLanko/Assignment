@@ -1,0 +1,186 @@
+/*global*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+}
+html{
+    font-size: 62.5%;;
+}
+:root{
+    --primary:gray; 
+}
+body{
+    font-family: 'Lato', sans-serif;
+    /*background-color: lavender; mobile*/
+}
+/*@media(min-width:768px){
+    body{
+        background-color: coral;
+    }
+}*/
+p{
+    font-size: 1.6rem;
+    margin: 2rem;
+    line-height: 2;
+}
+h3{
+    font-size: 2.5rem;
+}
+img{
+    max-width: 100%;
+}
+/* utilities*/
+.center{
+    text-align: center;
+}
+p{
+   font-weight: 700;
+}
+/* header*/
+.site-header{
+    background-color: var(--primary);
+    color:black;
+    height: 40vh;
+}
+table{
+    width: 50%;
+    background-color: aliceblue;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 1rem;
+    text-align: center;
+}
+tr:nth-of-type(even){
+    background-color: cadetblue;
+}
+tr:hover{
+    background-color: black;
+    color: white;
+}
+@media(min-width:768px){
+    .site-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .site-header h1{
+        font-size: 8rem;
+        width: 50rem;
+    }
+}
+.site-header h1{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 1rem;
+    letter-spacing: 1.5rem;
+    font-weight: bold;
+}
+.site-header h2{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 1px black;
+}
+.icons-container{
+    text-align: center;
+    margin-top: 3rem;
+}
+.icons-container i{
+    color: black;
+    font-size: 3.5rem;
+    margin-right: 2rem;    
+}
+.icons-container i:hover{
+    color: white;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+}
+.menu a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.menu a:hover{
+    color: black;
+}
+@media(min-width:768px){
+    .menu{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu a{
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+}
+/*main*/
+.img-container{
+    background-color: transparent;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.img-container img{
+    background-color: transparent;
+    border-radius: 25%;
+    border: 2px solid black;
+    padding: 5px;
+}
+/* footer*/
+.site-footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer.site-footer .icons-container a i{
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* course page*/
+header.second-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    height: 20vh;
+    padding: 1rem;
+}
+header.second-header h1{
+    font-size: 4rem;
+}
+@media(min-width:768px){
+    header.second-header{
+        flex-direction: row;
+        height: 5vh;
+    }
+}
+
+/*education page */
+
+.aside-education{
+    text-size-adjust: 18px;
+
+}
